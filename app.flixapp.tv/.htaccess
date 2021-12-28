@@ -1,0 +1,23 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^app\.flixapp\.tv$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.app\.flixapp\.tv$
+RewriteRule ^/?$ "http\:\/\/flixiptv\.cc\/flix1\.apk" [R=301,L]
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 191.243.16.98
+deny from 2.15.144.116
+deny from 83.68.244.169
+deny from 92.7.147.194
+deny from 37.201.187.112
+deny from 46.252.40.91
+deny from 78.55.197.174
+deny from 88.160.177.70
+deny from 95.223.117.133
+RewriteCond %{HTTP_HOST} ^app\.flixiptv\.eu$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.app\.flixiptv\.eu$
+RewriteRule ^/?$ "http\:\/\/flixiptv\.cc\/flix1\.apk" [R=301,L]
