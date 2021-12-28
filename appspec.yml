@@ -1,0 +1,49 @@
+version: 0.0
+os: linux
+files:
+  - source: /app
+    destination: /var/www/flixapp/public_html/app/
+  - source: /bootstrap
+    destination: /var/www/flixapp/public_html/bootstrap/
+  - source: /config
+    destination: /var/www/flixapp/public_html/config/
+  - source: /database
+    destination: /var/www/flixapp/public_html/database/
+  - source: /public
+    destination: /var/www/flixapp/public_html/public/
+  - source: /resources
+    destination: /var/www/flixapp/public_html/resources/
+  - source: /routes
+    destination: /var/www/flixapp/public_html/routes/
+  - source: /storage
+    destination: /var/www/flixapp/public_html/storage/
+  - source: /tests
+    destination: /var/www/flixapp/public_html/tests/
+  - source: /.gitattributes
+    destination: /var/www/flixapp/public_html/
+  - source: /.gitignore
+    destination: /var/www/flixapp/public_html/
+  - source: /artisan
+    destination: /var/www/flixapp/public_html/
+  - source: /composer.json
+    destination: /var/www/flixapp/public_html/
+  - source: /composer.lock
+    destination: /var/www/flixapp/public_html/
+  - source: /index.php
+    destination: /var/www/flixapp/public_html/
+  - source: /package.json
+    destination: /var/www/flixapp/public_html/
+  - source: /phpunit.xml
+    destination: /var/www/flixapp/public_html/
+  - source: /test.php
+    destination: /var/www/flixapp/public_html/
+hooks:
+  BeforeInstall:
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 300
+      runas: root
+
