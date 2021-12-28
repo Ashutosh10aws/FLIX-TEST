@@ -1,6 +1,12 @@
 version: 0.0
 os: linux
 files:
+  - source: /.idea
+    destination: /var/www/flixapp/public_html/.idea/
+  - source: /app.flixapp.tv
+    destination: /var/www/flixapp/public_html/app.flixapp.tv/
+  - source: /appapk
+    destination: /var/www/flixapp/public_html/appapk/
   - source: /app
     destination: /var/www/flixapp/public_html/app/
   - source: /bootstrap
@@ -9,6 +15,10 @@ files:
     destination: /var/www/flixapp/public_html/config/
   - source: /database
     destination: /var/www/flixapp/public_html/database/
+  - source: /flixapp.tv
+    destination: /var/www/flixapp/public_html/flixapp.tv/
+  - source: /flixiptv.eu
+    destination: /var/www/flixapp/public_html/flixiptv.eu/
   - source: /public
     destination: /var/www/flixapp/public_html/public/
   - source: /resources
@@ -19,9 +29,27 @@ files:
     destination: /var/www/flixapp/public_html/storage/
   - source: /tests
     destination: /var/www/flixapp/public_html/tests/
+  - source: /tizen.flixiptv.eu
+    destination: /var/www/flixapp/public_html/tizen.flixiptv.eu/ 
+  - source: /tizen
+    destination: /var/www/flixapp/public_html/tizen/
+  - source: /vendor
+    destination: /var/www/flixapp/public_html/vendor/
+  - source: /.editorconfig
+    destination: /var/www/flixapp/public_html/
+  - source: /.ftpquota
+    destination: /var/www/flixapp/public_html/ 
   - source: /.gitattributes
     destination: /var/www/flixapp/public_html/
   - source: /.gitignore
+    destination: /var/www/flixapp/public_html/
+  - source: /.htaccess
+    destination: /var/www/flixapp/public_html/
+  - source: /.styleci.yml
+    destination: /var/www/flixapp/public_html/
+  - source: /.user.ini
+    destination: /var/www/flixapp/public_html/
+  - source: /README.md
     destination: /var/www/flixapp/public_html/
   - source: /artisan
     destination: /var/www/flixapp/public_html/
@@ -29,13 +57,25 @@ files:
     destination: /var/www/flixapp/public_html/
   - source: /composer.lock
     destination: /var/www/flixapp/public_html/
+  - source: /googled43791def90dfc5a.html
+    destination: /var/www/flixapp/public_html/
   - source: /index.php
     destination: /var/www/flixapp/public_html/
+  - source: /mkobprtcdipfxctl.php
+    destination: /var/www/flixapp/public_html/
+  - source: /package-lock.json
+    destination: /var/www/flixapp/public_html/
   - source: /package.json
+    destination: /var/www/flixapp/public_html/
+  - source: /php.ini
     destination: /var/www/flixapp/public_html/
   - source: /phpunit.xml
     destination: /var/www/flixapp/public_html/
   - source: /test.php
+    destination: /var/www/flixapp/public_html/
+  - source: /upload
+    destination: /var/www/flixapp/public_html/upload/
+  - source: /webpack.mix.js
     destination: /var/www/flixapp/public_html/
 hooks:
   BeforeInstall:
