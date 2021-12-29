@@ -23,7 +23,7 @@ files:
     destination: /var/www/flixapp/public_html/resources/
   - source: /routes
     destination: /var/www/flixapp/public_html/routes/
-  - source: /storage
+  - source: /storage/app
     destination: /var/www/flixapp/public_html/storage/
   - source: /tests
     destination: /var/www/flixapp/public_html/tests/
