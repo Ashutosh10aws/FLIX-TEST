@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig authType="PASSWORD" host="162.241.225.249" id="f0d7daff-a438-4af4-b7f4-de75a7a0adc5" port="22" customName="SFTP" nameFormat="CUSTOM" username="flixiptv" />
-      <sshConfig authType="PASSWORD" host="162.241.225.249" id="495c353a-9000-4f0c-beea-e306761f37c2" port="22" customName="SFTP" nameFormat="CUSTOM" username="flixiptv" />
-    </configs>
-  </component>
-</project>
