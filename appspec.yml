@@ -1,8 +1,6 @@
 version: 0.0
 os: linux
 files:
-  - source: /.idea
-    destination: /var/www/flixapp/public_html/.idea/
   - source: /app.flixapp.tv
     destination: /var/www/flixapp/public_html/app.flixapp.tv/
   - source: /appapk
