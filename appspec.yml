@@ -24,7 +24,7 @@ files:
   - source: /routes
     destination: /var/www/flixapp/public_html/routes/
   - source: /storage/app
-    destination: /var/www/flixapp/public_html/storage/
+    destination: /var/www/flixapp/public_html/storage/app/
   - source: /tests
     destination: /var/www/flixapp/public_html/tests/
   - source: /tizen.flixiptv.eu
